@@ -1,40 +1,40 @@
 using System;
 
-// This class contains a method that performs an operation on two integers.
+// This class performs operations on numbers
 class MathOperations
 {
-    // This void method takes two integer parameters.
-    // It performs a math operation on the first integer
-    // and displays the second integer on the screen.
+    // This method takes two integers as parameters
+    // It performs a math operation on the first number
+    // and displays the second number
     public void PerformOperation(int firstNumber, int secondNumber)
     {
-        // Multiply the first integer by 5 and store the result.
+        // Multiply the first number by 5
         int result = firstNumber * 5;
 
-        // Display the result of the math operation on the first integer.
+        // Print the result of the operation
         Console.WriteLine("Result after multiplying first number by 5: " + result);
 
-        // Display the second integer on the screen.
+        // Print the second number
         Console.WriteLine("Second number is: " + secondNumber);
     }
 }
 
-// This is the main class of the console application.
+// Main class of the program
 class Program
 {
-    // Main method is the entry point of the program.
+    // Entry point of the application
     static void Main(string[] args)
     {
-        // Create an object of the MathOperations class.
+        // Create an object of MathOperations class
         MathOperations obj = new MathOperations();
 
-        // Call the method by passing two numbers in order.
+        // Call method using normal parameters
         obj.PerformOperation(10, 20);
 
-        // Call the method again using named parameters.
+        // Call method using named parameters
         obj.PerformOperation(firstNumber: 7, secondNumber: 15);
 
-        // Pause the console so the output stays visible.
+        // Keep console open
         Console.ReadLine();
     }
 }
